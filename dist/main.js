@@ -17,4 +17,19 @@ function showDaitils(name, age, salary) {
     }
 }
 console.log("abdo", 21, 15);
+function addAll(...nums) {
+    let res = 0;
+    nums.forEach((num) => {
+        res += num;
+    });
+    return res;
+}
+console.log(addAll(1, 2, 3, 4, 5, +true));
+// --- Anonymous Function
+const add = function (num1, num2) {
+    return num1 + num2;
+};
+console.log(add(1, 4));
+const addArrow = (num1, num2) => num1 + num2;
+console.log(addArrow(2, 4));
 //# sourceMappingURL=main.js.map

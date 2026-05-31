@@ -19,3 +19,20 @@ function showDaitils(name:string,age:number,salary:number){
 }
 
 console.log("abdo",21,15);
+
+function addAll(...nums:number[]){
+    let res=0;
+    nums.forEach((num)=>{
+        res+=num;
+    })
+    return res;
+}
+console.log(addAll(1,2,3,4,5,+true));
+// --- Anonymous Function
+const add =function(num1:number, num2:number):number{
+    return num1+num2;
+}
+console.log(add(1,4));
+const addArrow=(num1:number,num2:number):number=> num1+num2;
+
+console.log(addArrow(2,4));
