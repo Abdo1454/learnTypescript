@@ -32,4 +32,11 @@ const add = function (num1, num2) {
 console.log(add(1, 4));
 const addArrow = (num1, num2) => num1 + num2;
 console.log(addArrow(2, 4));
+function getAction(btns) {
+    console.log(`Action For Button UP Is ${btns.up}  `);
+    console.log(`Action For Button DOWN Is ${btns.down}  `);
+    console.log(`Action For Button RIGHt Is ${btns.right}  `);
+    console.log(`Action For Button LEFT Is ${btns.left}  `);
+}
+getAction({ up: "go up", down: "go down", right: "go right", left: "go left" });
 //# sourceMappingURL=main.js.map

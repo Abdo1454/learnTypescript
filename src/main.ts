@@ -36,3 +36,20 @@ console.log(add(1,4));
 const addArrow=(num1:number,num2:number):number=> num1+num2;
 
 console.log(addArrow(2,4));
+
+// data types 
+// adavnced types Alis
+
+type Bottuns={
+    up:string,
+    down:string,
+    right:string,
+    left:string
+}
+function getAction(btns:Bottuns){
+    console.log(`Action For Button UP Is ${btns.up}  `);
+    console.log(`Action For Button DOWN Is ${btns.down}  `);
+    console.log(`Action For Button RIGHt Is ${btns.right}  `);
+    console.log(`Action For Button LEFT Is ${btns.left}  `);
+}
+getAction({up:"go up",down: "go down",right:"go right",left:"go left"});
