@@ -53,3 +53,9 @@ function getAction(btns:Bottuns){
     console.log(`Action For Button LEFT Is ${btns.left}  `);
 }
 getAction({up:"go up",down: "go down",right:"go right",left:"go left"});
+
+// data types 
+// Tuple
+let article:readonly [number,string,boolean] =[11,"TiTle ONE",true];
+// article.push(10000);
+console.log(article);

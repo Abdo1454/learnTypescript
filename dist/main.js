@@ -39,4 +39,9 @@ function getAction(btns) {
     console.log(`Action For Button LEFT Is ${btns.left}  `);
 }
 getAction({ up: "go up", down: "go down", right: "go right", left: "go left" });
+// data types 
+// Tuple
+let article = [11, "TiTle ONE", true];
+// article.push(10000);
+console.log(article);
 //# sourceMappingURL=main.js.map
