@@ -65,3 +65,9 @@ function sendMsg(msg:string){
     return msg;
 }   
 console.log(sendMsg("Hello World"));
+function logName(name:string){
+    while(true){
+        console.log(name);
+    }
+    return name;
+}
