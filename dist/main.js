@@ -50,4 +50,11 @@ function sendMsg(msg) {
     return msg;
 }
 console.log(sendMsg("Hello World"));
+function logName(name) {
+    while (true) {
+        console.log(name);
+    }
+    return name;
+}
+logName("Abdulrahim");
 //# sourceMappingURL=main.js.map

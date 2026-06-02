@@ -71,3 +71,4 @@ function logName(name:string){
     }
     return name;
 }
+logName("Abdulrahim");
