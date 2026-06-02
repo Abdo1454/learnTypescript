@@ -44,4 +44,10 @@ getAction({ up: "go up", down: "go down", right: "go right", left: "go left" });
 let article = [11, "TiTle ONE", true];
 // article.push(10000);
 console.log(article);
+// return type never return
+function sendMsg(msg) {
+    console.log(msg);
+    return msg;
+}
+console.log(sendMsg("Hello World"));
 //# sourceMappingURL=main.js.map
