@@ -78,5 +78,23 @@
 // let myImage = document.getElementById("myImage") as HTMLImageElement;
 // console.log(myImage.src);
 
-let data :any="1000 ";
-console.log((data as string).repeat(3));
+// let data :any="1000 ";
+// console.log((data as string).repeat(3));
+// intersection types
+type A={
+    one:string,
+    two:number,
+    three:boolean
+}
+type B=A&   {
+    four:string,
+    five:number
+}
+function getData(data:B){
+    console.log(`the value of one is ${data.one}  `);
+    console.log(`the value of two is ${data.two}  `);
+    console.log(`the value of three is ${data.three}  `);
+    console.log(`the value of four is ${data.four}  `);
+    console.log(`the value of five is ${data.five}  `);
+}
+console.log(getData({one:"Abdulrahim",two:21,three:true,four:"Hello",five:1000}));
